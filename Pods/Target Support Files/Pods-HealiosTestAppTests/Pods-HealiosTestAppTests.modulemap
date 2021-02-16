@@ -1,0 +1,6 @@
+framework module Pods_HealiosTestAppTests {
+  umbrella header "Pods-HealiosTestAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

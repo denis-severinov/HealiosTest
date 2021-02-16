@@ -1,0 +1,1015 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F0A3A597C6231DB534D76A4 /* Pods_HealiosTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF2D139368B89FC5EE56E8B /* Pods_HealiosTestApp.framework */; };
+		5515F3AA25DA660000592FE4 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515F3A825DA660000592FE4 /* PostTableViewCell.swift */; };
+		5515F3AB25DA660000592FE4 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5515F3A925DA660000592FE4 /* PostTableViewCell.xib */; };
+		5515F3B125DA6A8200592FE4 /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515F3B025DA6A8200592FE4 /* UITableViewCell+ReuseIdentifier.swift */; };
+		5515F3B925DA6B4400592FE4 /* APIDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515F3B825DA6B4400592FE4 /* APIDataSource.swift */; };
+		5515F3BE25DA6B6700592FE4 /* PostsRequestsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515F3BD25DA6B6700592FE4 /* PostsRequestsBuilder.swift */; };
+		5515F3C325DA6B8200592FE4 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515F3C225DA6B8200592FE4 /* APIRequest.swift */; };
+		5515F3C825DA6B9900592FE4 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515F3C725DA6B9900592FE4 /* HTTPMethod.swift */; };
+		5515F3D225DA6BE600592FE4 /* UsersRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515F3D125DA6BE600592FE4 /* UsersRequestBuilder.swift */; };
+		5515F3D725DA6C1000592FE4 /* CommentsRequestsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515F3D625DA6C1000592FE4 /* CommentsRequestsBuilder.swift */; };
+		5515F3E525DA8E2600592FE4 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515F3E325DA8E2600592FE4 /* CommentTableViewCell.swift */; };
+		5515F3E625DA8E2600592FE4 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5515F3E425DA8E2600592FE4 /* CommentTableViewCell.xib */; };
+		554FB0BA25D6BE8000B08244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FB0B925D6BE8000B08244 /* AppDelegate.swift */; };
+		554FB0BC25D6BE8000B08244 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FB0BB25D6BE8000B08244 /* SceneDelegate.swift */; };
+		554FB0BE25D6BE8000B08244 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FB0BD25D6BE8000B08244 /* PostsViewController.swift */; };
+		554FB0C125D6BE8000B08244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554FB0BF25D6BE8000B08244 /* Main.storyboard */; };
+		554FB0C425D6BE8000B08244 /* HealiosTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 554FB0C225D6BE8000B08244 /* HealiosTestApp.xcdatamodeld */; };
+		554FB0C625D6BE8400B08244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554FB0C525D6BE8400B08244 /* Assets.xcassets */; };
+		554FB0C925D6BE8400B08244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554FB0C725D6BE8400B08244 /* LaunchScreen.storyboard */; };
+		554FB0D425D6BE8400B08244 /* HealiosTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FB0D325D6BE8400B08244 /* HealiosTestAppTests.swift */; };
+		554FB0DF25D6BE8400B08244 /* HealiosTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FB0DE25D6BE8400B08244 /* HealiosTestAppUITests.swift */; };
+		554FE30A25D6C31E004E92CB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FE30925D6C31E004E92CB /* Post.swift */; };
+		554FE31225D6C326004E92CB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FE31125D6C326004E92CB /* User.swift */; };
+		554FE31725D6C330004E92CB /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FE31625D6C330004E92CB /* Comment.swift */; };
+		554FE31D25D6C3EF004E92CB /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FE31C25D6C3EF004E92CB /* PostViewController.swift */; };
+		554FE32625D6C433004E92CB /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FE32525D6C433004E92CB /* PostsViewModel.swift */; };
+		554FE32F25D6C451004E92CB /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FE32E25D6C451004E92CB /* PostDetailsViewModel.swift */; };
+		554FE33925D6C4AF004E92CB /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FE33825D6C4AF004E92CB /* Endpoints.swift */; };
+		55D2F22C25DAA3380053E30B /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F22B25DAA3380053E30B /* AlertManager.swift */; };
+		55D2F24525DAB24A0053E30B /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F24425DAB24A0053E30B /* CoreDataController.swift */; };
+		55D2F28625DABDE10053E30B /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F28525DABDE10053E30B /* UsersRepository.swift */; };
+		55D2F29125DABF570053E30B /* ManagedPost+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F28B25DABF570053E30B /* ManagedPost+CoreDataProperties.swift */; };
+		55D2F29225DABF570053E30B /* ManagedUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F28C25DABF570053E30B /* ManagedUser+CoreDataProperties.swift */; };
+		55D2F29325DABF570053E30B /* ManagedUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F28D25DABF570053E30B /* ManagedUser+CoreDataClass.swift */; };
+		55D2F29425DABF570053E30B /* ManagedComment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F28E25DABF570053E30B /* ManagedComment+CoreDataClass.swift */; };
+		55D2F29525DABF570053E30B /* ManagedPost+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F28F25DABF570053E30B /* ManagedPost+CoreDataClass.swift */; };
+		55D2F29625DABF570053E30B /* ManagedComment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F29025DABF570053E30B /* ManagedComment+CoreDataProperties.swift */; };
+		55D2F29C25DBAA360053E30B /* BaseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F29B25DBAA360053E30B /* BaseMapper.swift */; };
+		55D2F2A125DBAA640053E30B /* UserMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F2A025DBAA640053E30B /* UserMapper.swift */; };
+		55D2F2A625DBAAB00053E30B /* PostMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F2A525DBAAB00053E30B /* PostMapper.swift */; };
+		55D2F2AB25DBAABA0053E30B /* CommentMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F2AA25DBAABA0053E30B /* CommentMapper.swift */; };
+		55D2F2B025DBC9C20053E30B /* CommentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F2AF25DBC9C20053E30B /* CommentsRepository.swift */; };
+		55D2F2BB25DBD3610053E30B /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F2BA25DBD3610053E30B /* PostsRepository.swift */; };
+		66615BC93588F7FF09CF3D1A /* Pods_HealiosTestApp_HealiosTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BA3762062F409DDE1C0C22 /* Pods_HealiosTestApp_HealiosTestAppUITests.framework */; };
+		EBB21BB7E1DB07FCB6E70CEF /* Pods_HealiosTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C96270F2ADDDA3E1FD7495B /* Pods_HealiosTestAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		554FB0D025D6BE8400B08244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554FB0AE25D6BE8000B08244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 554FB0B525D6BE8000B08244;
+			remoteInfo = HealiosTestApp;
+		};
+		554FB0DB25D6BE8400B08244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554FB0AE25D6BE8000B08244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 554FB0B525D6BE8000B08244;
+			remoteInfo = HealiosTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C96270F2ADDDA3E1FD7495B /* Pods_HealiosTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealiosTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1074EF97F0C04A570CE8433C /* Pods-HealiosTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealiosTestAppTests.release.xcconfig"; path = "Target Support Files/Pods-HealiosTestAppTests/Pods-HealiosTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		366A7920E434798E9B53E307 /* Pods-HealiosTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealiosTestApp.release.xcconfig"; path = "Target Support Files/Pods-HealiosTestApp/Pods-HealiosTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		3A0C95FC5B77609839FA4A49 /* Pods-HealiosTestApp-HealiosTestAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealiosTestApp-HealiosTestAppUITests.release.xcconfig"; path = "Target Support Files/Pods-HealiosTestApp-HealiosTestAppUITests/Pods-HealiosTestApp-HealiosTestAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5515F3A825DA660000592FE4 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		5515F3A925DA660000592FE4 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		5515F3B025DA6A8200592FE4 /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		5515F3B825DA6B4400592FE4 /* APIDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataSource.swift; sourceTree = "<group>"; };
+		5515F3BD25DA6B6700592FE4 /* PostsRequestsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRequestsBuilder.swift; sourceTree = "<group>"; };
+		5515F3C225DA6B8200592FE4 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		5515F3C725DA6B9900592FE4 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		5515F3D125DA6BE600592FE4 /* UsersRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRequestBuilder.swift; sourceTree = "<group>"; };
+		5515F3D625DA6C1000592FE4 /* CommentsRequestsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRequestsBuilder.swift; sourceTree = "<group>"; };
+		5515F3E325DA8E2600592FE4 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		5515F3E425DA8E2600592FE4 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		554FB0B625D6BE8000B08244 /* HealiosTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealiosTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		554FB0B925D6BE8000B08244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		554FB0BB25D6BE8000B08244 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		554FB0BD25D6BE8000B08244 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		554FB0C025D6BE8000B08244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		554FB0C325D6BE8000B08244 /* HealiosTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealiosTestApp.xcdatamodel; sourceTree = "<group>"; };
+		554FB0C525D6BE8400B08244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		554FB0C825D6BE8400B08244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		554FB0CA25D6BE8400B08244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554FB0CF25D6BE8400B08244 /* HealiosTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealiosTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		554FB0D325D6BE8400B08244 /* HealiosTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealiosTestAppTests.swift; sourceTree = "<group>"; };
+		554FB0D525D6BE8400B08244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554FB0DA25D6BE8400B08244 /* HealiosTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealiosTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		554FB0DE25D6BE8400B08244 /* HealiosTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealiosTestAppUITests.swift; sourceTree = "<group>"; };
+		554FB0E025D6BE8400B08244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554FE30925D6C31E004E92CB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		554FE31125D6C326004E92CB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		554FE31625D6C330004E92CB /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		554FE31C25D6C3EF004E92CB /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		554FE32525D6C433004E92CB /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		554FE32E25D6C451004E92CB /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
+		554FE33825D6C4AF004E92CB /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		55D2F22B25DAA3380053E30B /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		55D2F24425DAB24A0053E30B /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		55D2F28525DABDE10053E30B /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
+		55D2F28B25DABF570053E30B /* ManagedPost+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedPost+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		55D2F28C25DABF570053E30B /* ManagedUser+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		55D2F28D25DABF570053E30B /* ManagedUser+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		55D2F28E25DABF570053E30B /* ManagedComment+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedComment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		55D2F28F25DABF570053E30B /* ManagedPost+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedPost+CoreDataClass.swift"; sourceTree = "<group>"; };
+		55D2F29025DABF570053E30B /* ManagedComment+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedComment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		55D2F29B25DBAA360053E30B /* BaseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapper.swift; sourceTree = "<group>"; };
+		55D2F2A025DBAA640053E30B /* UserMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapper.swift; sourceTree = "<group>"; };
+		55D2F2A525DBAAB00053E30B /* PostMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMapper.swift; sourceTree = "<group>"; };
+		55D2F2AA25DBAABA0053E30B /* CommentMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentMapper.swift; sourceTree = "<group>"; };
+		55D2F2AF25DBC9C20053E30B /* CommentsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRepository.swift; sourceTree = "<group>"; };
+		55D2F2BA25DBD3610053E30B /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
+		6CF2D139368B89FC5EE56E8B /* Pods_HealiosTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealiosTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BA3762062F409DDE1C0C22 /* Pods_HealiosTestApp_HealiosTestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealiosTestApp_HealiosTestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48382FAEF1E6A6DA258C960 /* Pods-HealiosTestApp-HealiosTestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealiosTestApp-HealiosTestAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-HealiosTestApp-HealiosTestAppUITests/Pods-HealiosTestApp-HealiosTestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD148CA8A0F895CEFA5A2672 /* Pods-HealiosTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealiosTestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-HealiosTestAppTests/Pods-HealiosTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F63B0506B9CCADD13DCF1758 /* Pods-HealiosTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealiosTestApp.debug.xcconfig"; path = "Target Support Files/Pods-HealiosTestApp/Pods-HealiosTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		554FB0B325D6BE8000B08244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0A3A597C6231DB534D76A4 /* Pods_HealiosTestApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554FB0CC25D6BE8400B08244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB21BB7E1DB07FCB6E70CEF /* Pods_HealiosTestAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554FB0D725D6BE8400B08244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66615BC93588F7FF09CF3D1A /* Pods_HealiosTestApp_HealiosTestAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5515F3AF25DA6A6B00592FE4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5515F3B025DA6A8200592FE4 /* UITableViewCell+ReuseIdentifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5515F3CC25DA6BA300592FE4 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5515F3C225DA6B8200592FE4 /* APIRequest.swift */,
+				5515F3BD25DA6B6700592FE4 /* PostsRequestsBuilder.swift */,
+				5515F3D125DA6BE600592FE4 /* UsersRequestBuilder.swift */,
+				5515F3D625DA6C1000592FE4 /* CommentsRequestsBuilder.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		5515F3CD25DA6BB500592FE4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5515F3C725DA6B9900592FE4 /* HTTPMethod.swift */,
+				554FE33825D6C4AF004E92CB /* Endpoints.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5515F3E125DA8DFC00592FE4 /* PostTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5515F3A825DA660000592FE4 /* PostTableViewCell.swift */,
+				5515F3A925DA660000592FE4 /* PostTableViewCell.xib */,
+			);
+			path = PostTableViewCell;
+			sourceTree = "<group>";
+		};
+		5515F3E225DA8E0E00592FE4 /* CommentTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5515F3E325DA8E2600592FE4 /* CommentTableViewCell.swift */,
+				5515F3E425DA8E2600592FE4 /* CommentTableViewCell.xib */,
+			);
+			path = CommentTableViewCell;
+			sourceTree = "<group>";
+		};
+		554FB0AD25D6BE8000B08244 = {
+			isa = PBXGroup;
+			children = (
+				554FB0B825D6BE8000B08244 /* HealiosTestApp */,
+				554FB0D225D6BE8400B08244 /* HealiosTestAppTests */,
+				554FB0DD25D6BE8400B08244 /* HealiosTestAppUITests */,
+				554FB0B725D6BE8000B08244 /* Products */,
+				D9611C1F7B922D464728F7D9 /* Pods */,
+				C2F6A59166C511CEDCFA0678 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		554FB0B725D6BE8000B08244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				554FB0B625D6BE8000B08244 /* HealiosTestApp.app */,
+				554FB0CF25D6BE8400B08244 /* HealiosTestAppTests.xctest */,
+				554FB0DA25D6BE8400B08244 /* HealiosTestAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		554FB0B825D6BE8000B08244 /* HealiosTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				5515F3AF25DA6A6B00592FE4 /* Extensions */,
+				554FE30825D6C309004E92CB /* Model */,
+				554FE30725D6C300004E92CB /* View */,
+				554FE33725D6C494004E92CB /* StorageLayer */,
+				554FE33625D6C48B004E92CB /* NetworkLayer */,
+				554FB0BF25D6BE8000B08244 /* Main.storyboard */,
+				554FB0B925D6BE8000B08244 /* AppDelegate.swift */,
+				554FB0BB25D6BE8000B08244 /* SceneDelegate.swift */,
+				554FB0C525D6BE8400B08244 /* Assets.xcassets */,
+				554FB0C725D6BE8400B08244 /* LaunchScreen.storyboard */,
+				554FB0CA25D6BE8400B08244 /* Info.plist */,
+			);
+			path = HealiosTestApp;
+			sourceTree = "<group>";
+		};
+		554FB0D225D6BE8400B08244 /* HealiosTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				554FB0D325D6BE8400B08244 /* HealiosTestAppTests.swift */,
+				554FB0D525D6BE8400B08244 /* Info.plist */,
+			);
+			path = HealiosTestAppTests;
+			sourceTree = "<group>";
+		};
+		554FB0DD25D6BE8400B08244 /* HealiosTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				554FB0DE25D6BE8400B08244 /* HealiosTestAppUITests.swift */,
+				554FB0E025D6BE8400B08244 /* Info.plist */,
+			);
+			path = HealiosTestAppUITests;
+			sourceTree = "<group>";
+		};
+		554FE30725D6C300004E92CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				554FE32425D6C422004E92CB /* Posts */,
+				554FE32D25D6C438004E92CB /* PostDetails */,
+				5515F3E225DA8E0E00592FE4 /* CommentTableViewCell */,
+				5515F3E125DA8DFC00592FE4 /* PostTableViewCell */,
+				55D2F22B25DAA3380053E30B /* AlertManager.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		554FE30825D6C309004E92CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				554FE30925D6C31E004E92CB /* Post.swift */,
+				554FE31125D6C326004E92CB /* User.swift */,
+				554FE31625D6C330004E92CB /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		554FE32425D6C422004E92CB /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				554FB0BD25D6BE8000B08244 /* PostsViewController.swift */,
+				554FE32525D6C433004E92CB /* PostsViewModel.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		554FE32D25D6C438004E92CB /* PostDetails */ = {
+			isa = PBXGroup;
+			children = (
+				554FE31C25D6C3EF004E92CB /* PostViewController.swift */,
+				554FE32E25D6C451004E92CB /* PostDetailsViewModel.swift */,
+			);
+			path = PostDetails;
+			sourceTree = "<group>";
+		};
+		554FE33625D6C48B004E92CB /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5515F3B825DA6B4400592FE4 /* APIDataSource.swift */,
+				5515F3CD25DA6BB500592FE4 /* Utils */,
+				5515F3CC25DA6BA300592FE4 /* Requests */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		554FE33725D6C494004E92CB /* StorageLayer */ = {
+			isa = PBXGroup;
+			children = (
+				55D2F2BF25DBD52E0053E30B /* Repositories */,
+				55D2F29A25DBAA270053E30B /* Mappers */,
+				55D2F28A25DABF270053E30B /* ManagedEntities */,
+				554FB0C225D6BE8000B08244 /* HealiosTestApp.xcdatamodeld */,
+				55D2F24425DAB24A0053E30B /* CoreDataController.swift */,
+			);
+			path = StorageLayer;
+			sourceTree = "<group>";
+		};
+		55D2F28A25DABF270053E30B /* ManagedEntities */ = {
+			isa = PBXGroup;
+			children = (
+				55D2F28E25DABF570053E30B /* ManagedComment+CoreDataClass.swift */,
+				55D2F29025DABF570053E30B /* ManagedComment+CoreDataProperties.swift */,
+				55D2F28F25DABF570053E30B /* ManagedPost+CoreDataClass.swift */,
+				55D2F28B25DABF570053E30B /* ManagedPost+CoreDataProperties.swift */,
+				55D2F28D25DABF570053E30B /* ManagedUser+CoreDataClass.swift */,
+				55D2F28C25DABF570053E30B /* ManagedUser+CoreDataProperties.swift */,
+			);
+			path = ManagedEntities;
+			sourceTree = "<group>";
+		};
+		55D2F29A25DBAA270053E30B /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				55D2F29B25DBAA360053E30B /* BaseMapper.swift */,
+				55D2F2A025DBAA640053E30B /* UserMapper.swift */,
+				55D2F2A525DBAAB00053E30B /* PostMapper.swift */,
+				55D2F2AA25DBAABA0053E30B /* CommentMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		55D2F2BF25DBD52E0053E30B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				55D2F28525DABDE10053E30B /* UsersRepository.swift */,
+				55D2F2AF25DBC9C20053E30B /* CommentsRepository.swift */,
+				55D2F2BA25DBD3610053E30B /* PostsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C2F6A59166C511CEDCFA0678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CF2D139368B89FC5EE56E8B /* Pods_HealiosTestApp.framework */,
+				79BA3762062F409DDE1C0C22 /* Pods_HealiosTestApp_HealiosTestAppUITests.framework */,
+				0C96270F2ADDDA3E1FD7495B /* Pods_HealiosTestAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9611C1F7B922D464728F7D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F63B0506B9CCADD13DCF1758 /* Pods-HealiosTestApp.debug.xcconfig */,
+				366A7920E434798E9B53E307 /* Pods-HealiosTestApp.release.xcconfig */,
+				B48382FAEF1E6A6DA258C960 /* Pods-HealiosTestApp-HealiosTestAppUITests.debug.xcconfig */,
+				3A0C95FC5B77609839FA4A49 /* Pods-HealiosTestApp-HealiosTestAppUITests.release.xcconfig */,
+				DD148CA8A0F895CEFA5A2672 /* Pods-HealiosTestAppTests.debug.xcconfig */,
+				1074EF97F0C04A570CE8433C /* Pods-HealiosTestAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		554FB0B525D6BE8000B08244 /* HealiosTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554FB0E325D6BE8400B08244 /* Build configuration list for PBXNativeTarget "HealiosTestApp" */;
+			buildPhases = (
+				9CDC740CD45172A52AF57FE7 /* [CP] Check Pods Manifest.lock */,
+				554FB0B225D6BE8000B08244 /* Sources */,
+				554FB0B325D6BE8000B08244 /* Frameworks */,
+				554FB0B425D6BE8000B08244 /* Resources */,
+				2E70414A8C4080091BFAB577 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealiosTestApp;
+			productName = HealiosTestApp;
+			productReference = 554FB0B625D6BE8000B08244 /* HealiosTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		554FB0CE25D6BE8400B08244 /* HealiosTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554FB0E625D6BE8400B08244 /* Build configuration list for PBXNativeTarget "HealiosTestAppTests" */;
+			buildPhases = (
+				723BA7BDC607F05E423229ED /* [CP] Check Pods Manifest.lock */,
+				554FB0CB25D6BE8400B08244 /* Sources */,
+				554FB0CC25D6BE8400B08244 /* Frameworks */,
+				554FB0CD25D6BE8400B08244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554FB0D125D6BE8400B08244 /* PBXTargetDependency */,
+			);
+			name = HealiosTestAppTests;
+			productName = HealiosTestAppTests;
+			productReference = 554FB0CF25D6BE8400B08244 /* HealiosTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		554FB0D925D6BE8400B08244 /* HealiosTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554FB0E925D6BE8400B08244 /* Build configuration list for PBXNativeTarget "HealiosTestAppUITests" */;
+			buildPhases = (
+				4F0C1A27281F4D9AE978BE48 /* [CP] Check Pods Manifest.lock */,
+				554FB0D625D6BE8400B08244 /* Sources */,
+				554FB0D725D6BE8400B08244 /* Frameworks */,
+				554FB0D825D6BE8400B08244 /* Resources */,
+				438651361FE61E0B65025E14 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554FB0DC25D6BE8400B08244 /* PBXTargetDependency */,
+			);
+			name = HealiosTestAppUITests;
+			productName = HealiosTestAppUITests;
+			productReference = 554FB0DA25D6BE8400B08244 /* HealiosTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		554FB0AE25D6BE8000B08244 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					554FB0B525D6BE8000B08244 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					554FB0CE25D6BE8400B08244 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 554FB0B525D6BE8000B08244;
+					};
+					554FB0D925D6BE8400B08244 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 554FB0B525D6BE8000B08244;
+					};
+				};
+			};
+			buildConfigurationList = 554FB0B125D6BE8000B08244 /* Build configuration list for PBXProject "HealiosTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 554FB0AD25D6BE8000B08244;
+			productRefGroup = 554FB0B725D6BE8000B08244 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				554FB0B525D6BE8000B08244 /* HealiosTestApp */,
+				554FB0CE25D6BE8400B08244 /* HealiosTestAppTests */,
+				554FB0D925D6BE8400B08244 /* HealiosTestAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		554FB0B425D6BE8000B08244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554FB0C925D6BE8400B08244 /* LaunchScreen.storyboard in Resources */,
+				554FB0C625D6BE8400B08244 /* Assets.xcassets in Resources */,
+				554FB0C125D6BE8000B08244 /* Main.storyboard in Resources */,
+				5515F3AB25DA660000592FE4 /* PostTableViewCell.xib in Resources */,
+				5515F3E625DA8E2600592FE4 /* CommentTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554FB0CD25D6BE8400B08244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554FB0D825D6BE8400B08244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E70414A8C4080091BFAB577 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealiosTestApp/Pods-HealiosTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealiosTestApp/Pods-HealiosTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealiosTestApp/Pods-HealiosTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		438651361FE61E0B65025E14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealiosTestApp-HealiosTestAppUITests/Pods-HealiosTestApp-HealiosTestAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealiosTestApp-HealiosTestAppUITests/Pods-HealiosTestApp-HealiosTestAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealiosTestApp-HealiosTestAppUITests/Pods-HealiosTestApp-HealiosTestAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F0C1A27281F4D9AE978BE48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealiosTestApp-HealiosTestAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		723BA7BDC607F05E423229ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealiosTestAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CDC740CD45172A52AF57FE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealiosTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		554FB0B225D6BE8000B08244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554FE31D25D6C3EF004E92CB /* PostViewController.swift in Sources */,
+				5515F3BE25DA6B6700592FE4 /* PostsRequestsBuilder.swift in Sources */,
+				554FB0BE25D6BE8000B08244 /* PostsViewController.swift in Sources */,
+				554FB0C425D6BE8000B08244 /* HealiosTestApp.xcdatamodeld in Sources */,
+				5515F3B925DA6B4400592FE4 /* APIDataSource.swift in Sources */,
+				55D2F22C25DAA3380053E30B /* AlertManager.swift in Sources */,
+				554FE31225D6C326004E92CB /* User.swift in Sources */,
+				554FE31725D6C330004E92CB /* Comment.swift in Sources */,
+				5515F3E525DA8E2600592FE4 /* CommentTableViewCell.swift in Sources */,
+				55D2F29C25DBAA360053E30B /* BaseMapper.swift in Sources */,
+				55D2F29625DABF570053E30B /* ManagedComment+CoreDataProperties.swift in Sources */,
+				55D2F24525DAB24A0053E30B /* CoreDataController.swift in Sources */,
+				554FE32625D6C433004E92CB /* PostsViewModel.swift in Sources */,
+				55D2F28625DABDE10053E30B /* UsersRepository.swift in Sources */,
+				55D2F29325DABF570053E30B /* ManagedUser+CoreDataClass.swift in Sources */,
+				554FB0BA25D6BE8000B08244 /* AppDelegate.swift in Sources */,
+				55D2F2A125DBAA640053E30B /* UserMapper.swift in Sources */,
+				55D2F29125DABF570053E30B /* ManagedPost+CoreDataProperties.swift in Sources */,
+				554FB0BC25D6BE8000B08244 /* SceneDelegate.swift in Sources */,
+				5515F3D225DA6BE600592FE4 /* UsersRequestBuilder.swift in Sources */,
+				5515F3D725DA6C1000592FE4 /* CommentsRequestsBuilder.swift in Sources */,
+				55D2F29425DABF570053E30B /* ManagedComment+CoreDataClass.swift in Sources */,
+				55D2F2A625DBAAB00053E30B /* PostMapper.swift in Sources */,
+				554FE30A25D6C31E004E92CB /* Post.swift in Sources */,
+				5515F3B125DA6A8200592FE4 /* UITableViewCell+ReuseIdentifier.swift in Sources */,
+				5515F3C825DA6B9900592FE4 /* HTTPMethod.swift in Sources */,
+				554FE32F25D6C451004E92CB /* PostDetailsViewModel.swift in Sources */,
+				554FE33925D6C4AF004E92CB /* Endpoints.swift in Sources */,
+				5515F3C325DA6B8200592FE4 /* APIRequest.swift in Sources */,
+				55D2F29525DABF570053E30B /* ManagedPost+CoreDataClass.swift in Sources */,
+				55D2F2BB25DBD3610053E30B /* PostsRepository.swift in Sources */,
+				5515F3AA25DA660000592FE4 /* PostTableViewCell.swift in Sources */,
+				55D2F29225DABF570053E30B /* ManagedUser+CoreDataProperties.swift in Sources */,
+				55D2F2AB25DBAABA0053E30B /* CommentMapper.swift in Sources */,
+				55D2F2B025DBC9C20053E30B /* CommentsRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554FB0CB25D6BE8400B08244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554FB0D425D6BE8400B08244 /* HealiosTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554FB0D625D6BE8400B08244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554FB0DF25D6BE8400B08244 /* HealiosTestAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		554FB0D125D6BE8400B08244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 554FB0B525D6BE8000B08244 /* HealiosTestApp */;
+			targetProxy = 554FB0D025D6BE8400B08244 /* PBXContainerItemProxy */;
+		};
+		554FB0DC25D6BE8400B08244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 554FB0B525D6BE8000B08244 /* HealiosTestApp */;
+			targetProxy = 554FB0DB25D6BE8400B08244 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		554FB0BF25D6BE8000B08244 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				554FB0C025D6BE8000B08244 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		554FB0C725D6BE8400B08244 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				554FB0C825D6BE8400B08244 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		554FB0E125D6BE8400B08244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		554FB0E225D6BE8400B08244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		554FB0E425D6BE8400B08244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63B0506B9CCADD13DCF1758 /* Pods-HealiosTestApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AGZX2STFHL;
+				INFOPLIST_FILE = HealiosTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HealiosTest.HealiosTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		554FB0E525D6BE8400B08244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366A7920E434798E9B53E307 /* Pods-HealiosTestApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AGZX2STFHL;
+				INFOPLIST_FILE = HealiosTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HealiosTest.HealiosTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		554FB0E725D6BE8400B08244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD148CA8A0F895CEFA5A2672 /* Pods-HealiosTestAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AGZX2STFHL;
+				INFOPLIST_FILE = HealiosTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HealiosTest.HealiosTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealiosTestApp.app/HealiosTestApp";
+			};
+			name = Debug;
+		};
+		554FB0E825D6BE8400B08244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1074EF97F0C04A570CE8433C /* Pods-HealiosTestAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AGZX2STFHL;
+				INFOPLIST_FILE = HealiosTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HealiosTest.HealiosTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealiosTestApp.app/HealiosTestApp";
+			};
+			name = Release;
+		};
+		554FB0EA25D6BE8400B08244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B48382FAEF1E6A6DA258C960 /* Pods-HealiosTestApp-HealiosTestAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AGZX2STFHL;
+				INFOPLIST_FILE = HealiosTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HealiosTest.HealiosTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealiosTestApp;
+			};
+			name = Debug;
+		};
+		554FB0EB25D6BE8400B08244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0C95FC5B77609839FA4A49 /* Pods-HealiosTestApp-HealiosTestAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AGZX2STFHL;
+				INFOPLIST_FILE = HealiosTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HealiosTest.HealiosTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealiosTestApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		554FB0B125D6BE8000B08244 /* Build configuration list for PBXProject "HealiosTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554FB0E125D6BE8400B08244 /* Debug */,
+				554FB0E225D6BE8400B08244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554FB0E325D6BE8400B08244 /* Build configuration list for PBXNativeTarget "HealiosTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554FB0E425D6BE8400B08244 /* Debug */,
+				554FB0E525D6BE8400B08244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554FB0E625D6BE8400B08244 /* Build configuration list for PBXNativeTarget "HealiosTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554FB0E725D6BE8400B08244 /* Debug */,
+				554FB0E825D6BE8400B08244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554FB0E925D6BE8400B08244 /* Build configuration list for PBXNativeTarget "HealiosTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554FB0EA25D6BE8400B08244 /* Debug */,
+				554FB0EB25D6BE8400B08244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		554FB0C225D6BE8000B08244 /* HealiosTestApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				554FB0C325D6BE8000B08244 /* HealiosTestApp.xcdatamodel */,
+			);
+			currentVersion = 554FB0C325D6BE8000B08244 /* HealiosTestApp.xcdatamodel */;
+			path = HealiosTestApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 554FB0AE25D6BE8000B08244 /* Project object */;
+}
